@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang = "en">
-  
+<html>
 <head>
-  
-  <meta charset = "UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-quiv="X-UA-Compatible" content="ie=edge">  
-  <title> Hellow World! </title>
-  <link rel="stylesheet" href="css/style.css"">
+<title> Hellow World! </title>
 </head>
 <body>
   <h1> This is hompage1 </h1>
-  <img src="./Picture/240525 studioc2 0274.jpg">
+  <div class="user-wrap">
+    <div class = "user-image">
+        <img src="./Picture/240525 studioc2 0274.jpg">
+
+    </div>
+    <div class="user-text">
+      <p>Save the Date</p>
+    </div>
+    <div class="user-date">
+      <p>September | 01 | 2024 </p>
+    </div>
+  </div>
 </body>
 </html>
