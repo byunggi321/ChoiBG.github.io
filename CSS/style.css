@@ -5,14 +5,14 @@
   position: relative;
 }
 .user-wrap img{
-  width: 100%;
+  width: 50%;
+  Height 
   vertical-align: middle;
 }
 .user-text{
     position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 100%;
+    top: 50%;
+    left: 50%;    
     trasform: translate( -50%, -50%);
   font-size: 20px;
   font-family: 'ypseo';
