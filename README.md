@@ -1,7 +1,7 @@
 <html>
 <head>
   <title> Hellow World! </title>
-  <link href="./CCS/CCS_Main.ccs" rel="stylesheet">
+  <link href="./CSS/styles.css" rel="stylesheet">
 
 </head>
 <body>
