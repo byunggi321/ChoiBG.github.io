@@ -19,16 +19,49 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script>
-	function openPopup() {
+        function openPopup() {
 
-  		var popupURL = "https://docs.google.com/forms/d/e/1FAIpQLSdP7AaUFHKeXlsOaRQPT1EVGypYabMMQExEowoH9LIxrayAJA/viewform?usp=sf_link";
+        		var popupURL = "https://docs.google.com/forms/d/e/1FAIpQLSdP7AaUFHKeXlsOaRQPT1EVGypYabMMQExEowoH9LIxrayAJA/viewform?usp=sf_link";
 
-  		var popupProperties = "width=600,height=400,scrollbars=yes";
+        		var popupProperties = "width=600,height=400,scrollbars=yes";
 
-  		window.open(popupURL, "Popup", popupProperties);
-	}
-
+        		window.open(popupURL, "Popup", popupProperties);
+        }        
        </script>
+        <style>
+            .wrapper {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 20dvh;
+              <!--background: navy;--!>
+            }
+
+            .content {
+              padding: 3rem;
+              font-size: 2rem;
+              border-radius: 1rem;
+              <!--background: coral;--!>
+            }
+
+            #wrapper_inner { 
+              display: grid;
+              <!-- grid-template-columns: 200px 200px 200px;--!>
+              grid-template-rows: 100px 100px;
+              margin: 5px;
+              place-items: center;
+            }
+
+        
+            #wrapper_inner2 { 
+              display: grid;
+              grid-template-columns: 100px 150px 400px;              
+              margin: 5px;
+            }
+
+
+    
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -168,15 +201,15 @@
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">찾아 오시는 길</h2>
                 <hr class="divider">
-      	    <div align="center">
-                <div style=" font:normal normal 400 12px/normal dotum, sans-serif; width:640px; height:392px; color:#333; position:center">
-                <div style="height: 500px;" position:center">
-                <a href="https://map.kakao.com/?urlX=495113.0&amp;urlY=1129968.0&amp;itemId=11293206&amp;q=%ED%95%9C%EA%B5%AD%ED%94%84%EB%A0%88%EC%8A%A4%EC%84%BC%ED%84%B0&amp;srcid=11293206&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
-                <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/77a878645611d2ba1fb0110dba11455b91d22a3ffdb51d59ae9fa4089ebb6a67" width="638px" height="358px " style="position:center border:1px solid #ccc; ">
-                </a>
-                </div>
-                </div>
-                </div>
+      	    	<div align="center">
+	                <div style=" font:normal normal 400 12px/normal dotum, sans-serif; max-width:100%; height:100%;" color:#333; position:center">
+	                	<div style="height: 100%;" position:center">
+	                		<a href="https://map.kakao.com/?urlX=495113.0&amp;urlY=1129968.0&amp;itemId=11293206&amp;q=%ED%95%9C%EA%B5%AD%ED%94%84%EB%A0%88%EC%8A%A4%EC%84%BC%ED%84%B0&amp;srcid=11293206&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+	                			<img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/77a878645611d2ba1fb0110dba11455b91d22a3ffdb51d59ae9fa4089ebb6a67"  style="position:center border:1px solid #ccc; max-width:100%; height:auto; ">
+	                		</a>
+	                	</div>
+	        	</div>
+	        </div>
 	    <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
 		<div class="col-lg-3 col-md-6 text-center">
@@ -185,8 +218,6 @@
 			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
   				<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
 			</svg>
-
-
 		     </div>
                             <h3 class="h4 mt-4 mb-2"> Address </h3>
                             <p class="text-muted mb-0">서울시 중구 세종대로 124번지 한국프레스센터 20층</p>
@@ -237,30 +268,62 @@
         </section>
         
         <!-- 마음전하실 곳-->
-        <section class="page-section" id="contact">
+        <section class="page-section bg-primary"  id="contact">
             <div class="container px-4 px-lg-5 text-center">
-	    	<hr class="divider" />
-                	<h2 class="mb-4">축하의 마음 전하기</h2>
-	            <h4 class="mb-2">축하의 마음을 담아 축의금을 전달해 보세요.</h2>
-		<hr class="divider" /><div class="container">
-	<div>
-  	<div class="row">
-<div class="col-sm-3">
-Level 1: .col-sm-3
-</div>
-<div class="col-sm-9">
-<div class="row">
-<div class="row-8 row-sm-6">
-Level 2: .col-8 .col-sm-6
-        </div>
-        <div class="row-4 row-sm-6">
-          Level 2: .col-4 .col-sm-6
-        </div>
-      </div>
-    </div>
-  </div>
-	</div>
-             
+                <hr class="divider divider-light" />
+                    <h2 class="text-white mb-4">축하의 마음 전하기</h2>
+                    <h4 class="text-white mb-2">축하의 마음을 담아 축의금을 전달해 보세요.</h2>
+                <hr class="divider divider-light" />
+            </div>
+            <div class="wrapper" >
+                <div class="content">
+                    <div id="wrapper_inner">
+                        <div class="items">
+                            <div id="wrapper_inner2">
+                                <div class="items text-center">
+                                    <div id="wrapper_inner">
+                                    <div class="items"><p class="text-white mb-1" style="font-size : 20px">신랑 혼주</p></div>                    
+                                    </div>  
+                                </div>     
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px"> 최석근 </p></div>  
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px"> 김주리 </p></div>  
+                                    </div>         
+                                </div>      
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px">하나은행 : 000 000 00000 00000 </p></div>  
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px">하나은행 : 000 000 00000 00000 </p></div>  
+                                    </div>                         
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div id="wrapper_inner2">
+                                <div class="items text-center">
+                                    <div id="wrapper_inner">
+                                    <div class="items"><p class="text-white mb-1" style="font-size : 20px">신부 혼주</p></div>                    
+                                    </div>  
+                                </div>     
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px"> 김한용 </p></div>  
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px"> 김정희 </p></div>  
+                                    </div>         
+                                </div>      
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px">하나은행 : 000 000 00000 00000 </p></div>  
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 20px">하나은행 : 000 000 00000 00000 </p></div>  
+                                    </div>                         
+                                </div>     
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </body>
 </html>
