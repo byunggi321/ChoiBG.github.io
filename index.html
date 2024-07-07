@@ -33,32 +33,45 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              min-height: 20dvh;
+              min-height: 5dvh;
               <!--background: navy;--!>
             }
 
             .content {
-              padding: 3rem;
+              padding: 1rem;
               font-size: 2rem;
               border-radius: 1rem;
               <!--background: coral;--!>
             }
 
             #wrapper_inner { 
-              display: grid;
-              <!-- grid-template-columns: 200px 200px 200px;--!>
-              grid-template-rows: 100px 100px;
-              margin: 5px;
+              display: grid;              
+              margin: 0.1%;
               place-items: center;
             }
 
+                        .items:nth-child(2n+1) {
+              background-color: #bbb;
+            }
+
+            .items:nth-child(2n) {
+              background-color: #eee;
+            }
         
             #wrapper_inner2 { 
               display: grid;
-              grid-template-columns: 100px 150px 400px;              
-              margin: 5px;
+              grid-template-columns: 8vw 10vw 30vw;              
+              margin: 0.1%;
             }
 
+                        .items:nth-child(2n+1) {
+              background-color: #bbb;
+            }
+
+            .items:nth-child(2n) {
+              background-color: #eee;
+            }
+ 
 
     
         </style>
@@ -273,11 +286,33 @@
                 <hr class="divider divider-light" />
                     <h2 class="text-white mb-4">축하의 마음 전하기</h2>
                     <h4 class="text-white mb-2">축하의 마음을 담아 축의금을 전달해 보세요.</h2>
-                <hr class="divider divider-light" />
+                <hr class="divider divider-light mb-0" />
             </div>
             <div class="wrapper" >
                 <div class="content">
                     <div id="wrapper_inner">
+                        <div class="items">
+                            <div id="wrapper_inner2">
+                                <div class="items text-center">
+                                    <div id="wrapper_inner">
+                                    <div class="items"><p class="text-white mb-1" style="font-size : 50%">신랑</p></div>                    
+                                    </div>  
+                                </div>     
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 최병기 </p></div>  
+                     
+                                    </div>         
+                                </div>      
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%">하나은행 : 000 000 00000 00000 </p></div>  
+                                    
+                                    </div>                         
+                                </div>     
+                            </div>
+                        </div>
+
                         <div class="items">
                             <div id="wrapper_inner2">
                                 <div class="items text-center">
@@ -295,6 +330,27 @@
                                     <div id="wrapper_inner">
                                     <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%">하나은행 : 000 000 00000 00000 </p></div>  
                                     <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%">하나은행 : 000 000 00000 00000 </p></div>  
+                                    </div>                         
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div id="wrapper_inner2">
+                                <div class="items text-center">
+                                    <div id="wrapper_inner">
+                                    <div class="items"><p class="text-white mb-1" style="font-size : 50%">신부</p></div>                    
+                                    </div>  
+                                </div>     
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 김세미 </p></div>  
+                     
+                                    </div>         
+                                </div>      
+                                <div class="items">
+                                    <div id="wrapper_inner">
+                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%">하나은행 : 000 000 00000 00000 </p></div>  
+                                    
                                     </div>                         
                                 </div>     
                             </div>
