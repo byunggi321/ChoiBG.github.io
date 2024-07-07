@@ -26,37 +26,42 @@
                 var popupProperties = "width=600,height=400,scrollbars=yes";
 
                 window.open(popupURL, "Popup", popupProperties);
-        }        
+        }   
+
+        function BG_account()  {
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);    
+            textarea.value = 1002852582907;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }     
        </script>
         <style>
-        
-
-            .content {
-              font-size : 1.8rem;
-              border-radius: 2rem;
+            #wrapper { 
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(100%, 3fr)); 
+              
             }
+             .items:nth-child(2n+1) {
+      background-color: #bbb;
+    }
+
+    .items:nth-child(2n) {
+      background-color: #eee;
+    }
+
+   
 
             #wrapper_inner { 
-              display: grid;              
-              margin: 4%;
+              display: grid;   
+              grid-template-columns: auto 1fr 1fr 3fr auto; 
+
+              margin: 1%;
               place-items: center;
             }
 
-
-            #wrapper_inner2 { 
-              display: grid;]
-              margin: 10%;
-              grid-template-columns: 15vw 15vw 30vw;              
-
-            }
-
-            #wrapper_inner3 { 
-              display: grid;
-              grid-template-rows: 1.8vw 1vw 1vw;             
-              margin: 0.1%;
-            }
-
-
+        
         </style>
     </head>
     <body id="page-top">
@@ -173,17 +178,17 @@
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/9.jpg" alt="..." />
                         </a>
                     </div>
-            <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/10.jpg" title="Project Name">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/10.jpg" alt="..." />
                         </a>
                     </div>
-            <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/11.jpg" title="Project Name">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/11.jpg" alt="..." />
                         </a>
                     </div>
-            <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/12.jpg" title="Project Name">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpg" alt="..." />
                         </a>
@@ -267,127 +272,47 @@
         <section class="page-section bg-primary"  id="contact">
             <div class="container px-4 px-lg-5 text-center">
                 <hr class="divider divider-light" />
-                    <h2 class="text-white mb-4">축하의 마음 전하기</h2>
+                    <h2 class="text-white mb-2">축하의 마음 전하기</h2>
                     <h4 class="text-white mb-2">축하의 마음을 담아 축의금을 전달해 보세요.</h2>
-                <hr class="divider divider-light mb-0" />
-                <div class="wrapper" >
-                <div class="content">
-                    <div id="wrapper_inner">
-                        <div class="items"></div>
-                        <div class="items">
-                            <div id="wrapper_inner2">
-                                <div class="items text-center">
-                                    <div id="wrapper_inner">
-                                    <div class="items"><p class="text-white mb-1" style="font-size : 50%">신랑</p></div>                    
-                                    </div>  
-                                </div>     
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 최병기 </p></div>  
-                     
-                                    </div>         
-                                </div>      
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center">
-                                        <p class="text-white mb-0" style="font-size : 50%"> 
-                                            <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="this.select();document.execCommand('copy');alert('클립보드에 복사 되었습니다.');return false;" value="1002-852-582907(우리)" readonly/>
-                                        </p>
-                                    </div>                                      
-                                    </div>                         
-                                </div>     
-                            </div>
+                <hr class="divider divider-light mb-4" />
+                <div id="wrapper">
+                    <div class="items">
+                        <div id="wrapper_inner">
+                            <div class="items"></div>
+                            <div class="items">
+                                <div class="items"><p class="text-white mb-1" style="font-size : 100%">신랑</p></div> 
+                            </div>     
+                            <div class="items">
+                                <div class="items text-center"><p class="text-white mb-1" style="font-size : 100%"> 최병기 </p></div>     
+                            </div>      
+                            <div class="items" style="text-align:center;"> 
+                                <div class="items"><p class="text-white mb-1" style="font-size : 100%"> </p></div> 
+                                 <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="BG_account(); alert('클립보드에 복사 되었습니다.');return false;" size="23" value="우리은행 : 1002-852-582907" readonly/>                 
+                            </div>     
+                            <div class="items"></div>
+                   
                         </div>
-                        <div class="items">
-                            <div id="wrapper_inner2">
-                                <div class="items text-center">
-                                    <div id="wrapper_inner3">
-                                    <div class="items"></div>
-                                    <div class="items"><p class="text-white mb-1" style="font-size : 50%">신랑 혼주</p></div>                    
-                                    <div class="items"></div>                   
-                                    </div>  
-                                </div>     
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 최석근 </p></div>  
-                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 김주리 </p></div>  
-                                    </div>         
-                                </div>      
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center">
-                                        <p class="text-white mb-1" style="font-size : 50%"> 
-                                            <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="this.select();document.execCommand('copy');alert('클립보드에 복사 되었습니다.');return false;" value="305-890045-06607(하나)" readonly/>
-                                        </p>
-                                    </div>  
-                                    <div class="items text-center">
-                                        <p class="text-white mb-1" style="font-size : 50%">  
-                                            <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="this.select();document.execCommand('copy');alert('클립보드에 복사 되었습니다.');return false;" value="233040-52-151076(농협)" readonly/>
-                                        </p>
 
-                                    </div>  
-                                    </div>                         
-                                </div>     
-                            </div>
-                        </div>             
-                        <div class="items">
-                            <div id="wrapper_inner2">
-                                <div class="items text-center">
-                                    <div id="wrapper_inner">
-                                    <div class="items"><p class="text-white mb-1" style="font-size : 50%">신부</p></div>                    
-                                    </div>  
-                                </div>     
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 김세미 </p></div>  
-                     
-                                    </div>         
-                                </div>      
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center">
-                                        <p class="text-white mb-1" style="font-size : 50%"> 
-                                            <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="this.select();document.execCommand('copy');alert('클립보드에 복사 되었습니다.');return false;" value="110-060-624635(신한)" readonly/>
-                                        </p>
-                                    </div>                                      
-                                    </div>                         
-                                </div>     
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div id="wrapper_inner2">
-                                <div class="items text-center">
-                                    <div id="wrapper_inner3">
-                                    <div class="items"></div>
-                                    <div class="items"><p class="text-white mb-1" style="font-size : 50%">신부 혼주</p></div>                    
-                                    <div class="items"></div>
-                                    </div>  
-                                </div>     
-                                <div class="items">
-                                    <div id="wrapper_inner">
-                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 김한용 </p></div>  
-                                    <div class="items text-center"><p class="text-white mb-1" style="font-size : 50%"> 김정희 </p></div>  
-                                    </div>         
-                                </div>      
-                                <div class="items">
-                                    <div id="wrapper_inner3">
-                                    <div class="items"></div>
-                                    <div class="items text-center">
-                                        <p class="text-white mb-1" style="font-size : 50%"> 
-                                            <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="this.select();document.execCommand('copy');alert('클립보드에 복사 되었습니다.');return false;" value="110-021-578710(신한)" readonly/>
-                                        </p>                                        
-                                    </div>   
-                                    <div class="items"></div>               
-                                    </div>                         
-                                </div>     
-                            </div>
-                        </div>        
                     </div>
-                </div>
-            </div>    
-            </div>
-                    
+                    <div class="items">2
+
+                    </div>
+                    <div class="items">3
+
+                    </div>
+                    <div class="items">4
+
+                    </div>
+                    <div class="items">5
+
+                    </div>
+                    <div class="items">6
+
+                    </div>
+                </div>                
+            </div>                    
         </section>
     </body>
 </html>
+
 
