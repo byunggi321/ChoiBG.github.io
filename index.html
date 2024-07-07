@@ -35,7 +35,40 @@
             textarea.select();
             document.execCommand("copy");
             document.body.removeChild(textarea);
-        }     
+        }  
+        function BG_F_account()  {
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);    
+            textarea.value = 30589004506607;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }  
+        function BG_M_account()  {
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);    
+            textarea.value = 23304052151076;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }  
+        function SM_account()  {
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);    
+            textarea.value = 110060624635;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }    
+        function SM_F_account()  {
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);    
+            textarea.value = 110021578710;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        } 
+
        </script>
         <style>
             #wrapper { 
@@ -43,21 +76,21 @@
               grid-template-columns: repeat(auto-fill, minmax(100%, 3fr)); 
               
             }
-             .items:nth-child(2n+1) {
-      background-color: #bbb;
-    }
-
-    .items:nth-child(2n) {
-      background-color: #eee;
-    }
-
    
 
             #wrapper_inner { 
               display: grid;   
               grid-template-columns: auto 1fr 1fr 3fr auto; 
 
-              margin: 1%;
+              margin: 2%;
+              place-items: center;
+            }
+
+            #wrapper_inner2 { 
+              display: grid;   
+              grid-template-rows: auto auto; 
+
+              margin: 2%;
               place-items: center;
             }
 
@@ -289,30 +322,63 @@
                                 <div class="items"><p class="text-white mb-1" style="font-size : 100%"> </p></div> 
                                  <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="BG_account(); alert('클립보드에 복사 되었습니다.');return false;" size="23" value="우리은행 : 1002-852-582907" readonly/>                 
                             </div>     
-                            <div class="items"></div>
-                   
+                            <div class="items"></div>                   
                         </div>
-
                     </div>
-                    <div class="items">2
-
+                    <div class="items">
+                        <div id="wrapper_inner">
+                            <div class="items"></div>
+                            <div class="items"><p class="text-white mb-1" style="font-size : 100%">신랑 혼주</p></div>                    
+                            <div id="wrapper_inner2" text-center>
+                                <div class="items text-center"><p class="text-white mb-1" style="font-size : 100%"> 최석근 </p></div>  
+                                <div class="items text-center"><p class="text-white mb-1" style="font-size : 100%"> 김주리 </p></div>  
+                            </div> 
+                            <div id="wrapper_inner2" text-center>
+                                <div class="items text-center">
+                                    <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="BG_F_account(); alert('클립보드에 복사 되었습니다.');return false;" size="23" value="하나은행 : 305-890045-06607" readonly/>                                    
+                                </div>  
+                                <div class="items text-center">
+                                    <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="BG_M_account(); alert('클립보드에 복사 되었습니다.');return false;" size="23" value="농협은행 : 233040-52-151076" readonly/>                                    
+                                </div>  
+                            </div>  
+                            <div class="items"></div>             
+                        </div>
                     </div>
-                    <div class="items">3
-
+                    <div class="items">
+                        <div id="wrapper_inner">
+                            <div class="items"></div>
+                            <div class="items">
+                                <div class="items"><p class="text-white mb-1" style="font-size : 100%">신부</p></div> 
+                            </div>     
+                            <div class="items">
+                                <div class="items text-center"><p class="text-white mb-1" style="font-size : 100%"> 김세미 </p></div>     
+                            </div>      
+                            <div class="items" style="text-align:center;"> 
+                                <div class="items"><p class="text-white mb-1" style="font-size : 100%"> </p></div> 
+                                 <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="SM_account(); alert('클립보드에 복사 되었습니다.');return false;" size="23" value="신한은행 : 110-060-624635" readonly/>                 
+                            </div>     
+                            <div class="items"></div>                   
+                        </div>
                     </div>
-                    <div class="items">4
-
-                    </div>
-                    <div class="items">5
-
-                    </div>
-                    <div class="items">6
-
-                    </div>
+                    <div class="items">
+                         <div id="wrapper_inner">
+                            <div class="items"></div>
+                            <div class="items"><p class="text-white mb-1" style="font-size : 100%">신부 혼주</p></div>                    
+                            <div id="wrapper_inner2" text-center>
+                                <div class="items text-center"><p class="text-white mb-1" style="font-size : 100%"> 김한용 </p></div>  
+                                <div class="items text-center"><p class="text-white mb-1" style="font-size : 100%"> 김정희 </p></div>  
+                            </div> 
+                            <div id="wrapper_inner2" text-center>
+                                <div class="items text-center">
+                                    <input class="text-white mb-1" style="border:none; border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent; outline:none;" onclick="SM_F_account(); alert('클립보드에 복사 되었습니다.');return false;" size="23" value="신한은행 : 110-021-578710" readonly/>                                    
+                                </div>  
+                           
+                            </div>  
+                            <div class="items"></div>             
+                        </div>
+                    </div>             
                 </div>                
             </div>                    
         </section>
     </body>
 </html>
-
-
